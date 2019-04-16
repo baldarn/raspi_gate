@@ -1,4 +1,4 @@
-Flaskr
+Raspi gate
 ======
 
 
@@ -6,12 +6,7 @@ Install
 -------
 
     # clone the repository
-    $ git clone https://github.com/pallets/flask
-    $ cd flask
-    # checkout the correct version
-    $ git tag  # shows the tagged versions
-    $ git checkout latest-tag-found-above
-    $ cd examples/tutorial
+    $ git clone https://github.com/baldarn/raspi_gate
 
 Create a virtualenv and activate it::
 
@@ -23,14 +18,8 @@ Or on Windows cmd::
     $ py -3 -m venv venv
     $ venv\Scripts\activate.bat
 
-Install Flaskr::
+Install RaspiGate::
 
-    $ pip install -e .
-
-Or if you are using the master branch, install Flask from source before
-installing Flaskr::
-
-    $ pip install -e ../..
     $ pip install -e .
 
 
@@ -39,14 +28,14 @@ Run
 
 ::
 
-    $ export FLASK_APP=flaskr
+    $ export FLASK_APP=raspi_gate
     $ export FLASK_ENV=development
     $ flask init-db
     $ flask run
 
 Or on Windows cmd::
 
-    > set FLASK_APP=flaskr
+    > set FLASK_APP=raspi_gate
     > set FLASK_ENV=development
     > flask init-db
     > flask run

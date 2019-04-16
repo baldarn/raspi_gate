@@ -6,13 +6,13 @@ with io.open('README.rst', 'rt', encoding='utf8') as f:
     readme = f.read()
 
 setup(
-    name='flaskr',
+    name='raspi_gate',
     version='1.0.0',
-    url='http://flask.pocoo.org/docs/tutorial/',
-    license='BSD',
-    maintainer='Pallets team',
-    maintainer_email='contact@palletsprojects.com',
-    description='The basic blog app built in the Flask tutorial.',
+    url='https://github.com/baldarn/raspi_gate',
+    license='MIT',
+    maintainer='baldarn',
+    maintainer_email='lorenzo.farnararo@gmail.com',
+    description='A basic raspberry app to open a gate :)',
     long_description=readme,
     packages=find_packages(),
     include_package_data=True,

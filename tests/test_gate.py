@@ -1,8 +1,8 @@
 import pytest
-from flaskr.db import get_db
+from raspi_gate.db import get_db
 import pytest
 from flask import g, session
-from flaskr.db import get_db
+from raspi_gate.db import get_db
 
 
 @pytest.mark.parametrize('path', (
