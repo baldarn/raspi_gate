@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  {% if g.user %}
+    <a class="action" style="width: 100%;" href="{{ url_for('gate.open') }}">
+      <button style="width: 100%; height: 300px;">Open</button>
+    </a>
+  {% endif %}
+{% endblock %}
+
+
