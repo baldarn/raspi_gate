@@ -15,12 +15,6 @@ bp = Blueprint('gate', __name__)
 @bp.route('/')
 def index():
     """index page."""
-
-    led = LED(11)
-    led.on()
-    sleep(1)
-    led.off()
-
     return render_template('gate/index.html')
 
 
@@ -29,6 +23,10 @@ def index():
 def open():
     """Open the gate."""
 
+    led = LED(11)
+    led.off()
+    sleep(1)
+    led.on()
 
     return redirect(url_for('gate.index'))
 
