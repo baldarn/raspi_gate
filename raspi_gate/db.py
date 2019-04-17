@@ -39,7 +39,7 @@ def init_db():
         db.executescript(f.read().decode('utf8'))
 
     # initialize admin user
-    admin = db().execute(
+    admin = db.execute(
         'SELECT * FROM user WHERE username = ?', ('admin',)
     ).fetchone()
 
