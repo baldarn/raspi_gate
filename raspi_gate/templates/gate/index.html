@@ -3,7 +3,11 @@
 {% block header %}
   {% if g.user %}
     <a class="action" style="width: 100%;" href="{{ url_for('gate.open') }}">
-      <button style="width: 100%; height: 300px;">Open</button>
+      <button style="width: 100%; height: 300px; font-size: 50px;">Open</button>
+    </a>
+  {% else %}
+    <a class="action" style="width: 100%;" href="{{ url_for('auth.login') }}">
+      <button style="width: 100%; height: 300px; font-size: 50px;">Login</button>
     </a>
   {% endif %}
 {% endblock %}
