@@ -10,6 +10,20 @@
       <button style="width: 100%; height: 300px; font-size: 50px;">Login</button>
     </a>
   {% endif %}
+
 {% endblock %}
 
+{% block content %}
+
+  {% if g.user %}
+    <h2>Salotto</h2>
+    <h3>last time: {{ last_update_sensor }}</h3>
+    <h3>temperature in: {{ last_temperature_in }}</h3>
+    <h3>humidity in: {{ last_humidity_in }}</h3>
+    <br>
+    <h3>temperature out: {{ last_temperature_out }}</h3>
+    <h3>humidity out: {{ last_humidity_out }}</h3>
+  {% endif %}
+
+{% endblock %}
 
