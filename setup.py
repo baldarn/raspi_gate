@@ -19,7 +19,6 @@ setup(
     zip_safe=False,
     install_requires=[
         'flask',
-        'gpiozero',
         'requests'
     ],
     extras_require={
