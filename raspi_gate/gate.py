@@ -71,7 +71,7 @@ def open():
 
 def get_sensors():
     try:
-        resp = requests.get(url='http://192.168.1.20', timeout=1)
+        resp = requests.get(url='http://192.168.1.20/data', timeout=1)
         data = resp.json()
 
         print(data)
