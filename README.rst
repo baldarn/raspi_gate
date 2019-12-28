@@ -1,6 +1,10 @@
 Raspi gate
 ======
 
+UPDATE
+
+I discovered home assistant and my life changed! Now I'm migrating all the domotics in that system, so the raspi gate is deprecated. So long and thank you for the fish!
+
 
 Install
 -------
